@@ -1,3 +1,11 @@
+#stier{
+float:left;
+  width:250px;
+  height:250px;
+  margin:5px;
+  border:0px solid black;
+
+}
 #leftbox{
   float:left;
   width:250px;
