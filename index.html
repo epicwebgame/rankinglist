@@ -1,5 +1,20 @@
 <!doctype HTML>
 <html>
+ <meta name="description" content="in this page we are going to explain the concelt of c# programming"/>
+ <meta name="author" content="computech">
+<meta http-equiv="refresh" content="20"
+<style>
+ #div1, #div2 {
+ float: left;
+ width: 100px;
+ height: 35px;
+ margin: 10px;
+ padding: 10px;
+ border:1px solid black;
+ }
+ </style>
+</head>
+ <body link="red" alink="green" vlink= "yellow">
  
 
  <link rel="stylesheet" type="text/css" href="./style.css"/>
@@ -7,6 +22,24 @@
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
  
 <body>
+ 
+ <p><strong>DRAG TEST</strong></p>
+ <div id="div1" ondrop="drop (event)" ondragover="allowDrop(event)">
+  <img src="jugrampor.png" draggable="true" ondragstart= "drag(event)" id="drag1" width="88" height="31">
+ </div>
+ <div id="div2" ondrop="drop(event)" ondragover="allowDrop (event) "></div>
+ <script>
+  function allowDrop(ev) {
+   ev.preventDefault();
+  }
+  function drag(ev) {
+   ev.dataTransfer.setData("text", ev.target.id);
+  }
+  function drop(ev) {
+   ev.preventDefault();
+   var data = ev.dataTransfer.getData("text");
+   ev.target.appendChild(document.getElementId(data));
+ </script>
  <section id="stier">
   <img id="stier" src="stier.png">
  </section>
